@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us Page</title>
+    <link rel="stylesheet" href="./css/aboutus.css" /> <!-- Link to the CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet"> <!-- Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="top-header">
+        <div class="header-container">
+            <div class="branding">Hogwarts Wizardry Arcade</div>
+            <div class="actions">
+                <input type="text" placeholder="Search for magic..." />
+                <button>Search</button>
+            </div>
+        </div>
+        <nav class="nav-bar">
+          <a href="index.html">Home</a>
+          <a href="aboutUs.html">About Us</a>
+          <a href="console.html">Consoles & Peripherals</a>
+          <a href="games.html">Games</a>
+          <a href="upcoming.html">Upcoming Games</a>
+          <a href="events&news.html">Events & News</a>
+          <a href="faq.html">Queries & FAQ</a>
+          <a href="order.html">Order</a>
+        </nav>
+    </header>
+        <body>
+            <div class="events-news-container">
+              <!-- Section1 -->
+              <section class="Section1">
+                <div class="left-text">
+                  <h2>Still waiting for letter from Hogwarts?</h2><br><br>
+                    <p>Where spells and pixels collide! Dive into 16 magical games, with 12 enchanted adventures coming soon each tied to a legendary Hogwarts house: "Gryffindor, Slytherin, Ravenclaw, and Hufflepuff". 
+                        Browse our Console & Peripherals Chamber for wizard-worthy gaming gear. ✨<br>
+
+                        But that’s not all—2 live events are casting now, with 2 more brewing!
+                        Your magical quest begins here… Are you ready to play like a true wizard?
+                    </p><br>
+                    <p><strong>ARE YOU IN TO WIZARD WORLD?</strong></p><br>
+                    <p><strong>HERE IS YOUR LUCKY CHANCE!</strong></p>
+                </div>
+                <div class="right-image">
+                  <img src="Images/Aboutus.jpg" alt="Event 1">
+                </div>
+              </section>
+
+            <!-- Second Section (Grid of 5 images) -->
+    <section class="section-two">
+        <div class="container swiper">
+            <h2>We're having...</h2>
+            <div class="card-wrapper">
+                <ul class="card-list swiper-wrapper">
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="Images/Grid1.jpg" class="card-image">
+                        </a>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="Images/Grid2.jpg" class="card-image">
+                        </a>
+                    </li>
+                    
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="Images/Grid3.jpg" class="card-image">
+                        </a>
+                    </li>
+                   
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="Images/Grid4.jpg" class="card-image">
+                        </a>
+                    </li>
+                    
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="Images/Grid5.jpg" class="card-image">
+                        </a>
+                    </li>
+                    
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="Images/Grid6.jpg" class="card-image">
+                        </a>
+                    </li>
+                </ul>
+    
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+                <!-- Section 3: Join Our Team Form -->
+                <section class="join-team-section">
+                    <h2>Join Our Wizard Family?</h2><br>
+                    <p>We are always looking for passionate half-blood muggle to join to Hogwarts! Fill out the form below to apply for the Hogwarts!</p><br>
+                    <div class="form-container">
+                        <form>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Your name">
+                            
+                            <label for="age">Age:</label>
+                            <input type="number" id="age" name="age" placeholder="Your age">
+                            
+                            <label for="position">Position:</label>
+                            <input type="text" id="position" name="position" placeholder="Desired position">
+                            
+                            <label for="why">Why:</label>
+                            <textarea id="why" name="why" placeholder="Tell us why you'd be a great fit"></textarea>
+                            
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </section>
+                <!-- Branches Grid -->
+    <div class="branches-container">
+        
+        <!-- Branch 1 -->
+        <div class="branch">
+            <h2>Diagon Alley Branch</h2><br>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen></iframe>
+            </div><br>
+            <img src="Images/Daigon Alley.jpg" alt="Diagon Alley Branch">
+            <p class="hours">Opening: 10:00 AM | Closing: 11:00 PM</p>
+            <p>Located in the heart of Diagon Alley, this branch offers the best in magical gaming experiences, tournaments, and exclusive wizard-themed consoles!</p>
+        </div>
+
+        <!-- Branch 2 -->
+        <div class="branch">
+            <h2>Hogsmeade Branch</h2><br>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen></iframe>
+            </div><br>
+            <img src="Images/Hogsmeade.jpg" alt="Hogsmeade Branch">
+            <p class="hours">Opening: 9:30 AM | Closing: 10:30 PM</p>
+            <p>Step into the magical world of Hogsmeade and enjoy a unique gaming experience with a cozy wizarding atmosphere, butterbeer, and more!</p>
+        </div>
+
+        <!-- Branch 3 -->
+        <div class="branch">
+            <h2>Hogwarts Castle Branch</h2><br>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen></iframe>
+            </div><br>
+            <img src="Images/Hogswart.jpg" alt="Hogwarts Castle Branch">
+            <p class="hours">Opening: 11:00 AM | Closing: 12:00 AM</p>
+            <p>Experience gaming at its finest inside the legendary Hogwarts Castle! Special themed events, VR games, and house-based competitions await.</p>
+        </div>
+
+    </div>
+
+    <!-- Table for Branch Details -->
+    <table class="branches-table">
+        <tr>
+            <th>Branch Name</th>
+            <th>Location</th>
+            <th>Opening Hours</th>
+            <th>Closing Hours</th>
+            <th>Special Features</th>
+        </tr>
+        <tr>
+            <td>Diagon Alley</td>
+            <td>Diagon Alley, London</td>
+            <td>10:00 AM</td>
+            <td>11:00 PM</td>
+            <td>Wizard-themed consoles, tournaments</td>
+        </tr>
+        <tr>
+            <td>Hogsmeade</td>
+            <td>Hogsmeade Village</td>
+            <td>9:30 AM</td>
+            <td>10:30 PM</td>
+            <td>Cozy atmosphere, butterbeer, classic games</td>
+        </tr>
+        <tr>
+            <td>Hogwarts Castle</td>
+            <td>Hogwarts School</td>
+            <td>11:00 AM</td>
+            <td>12:00 AM</td>
+            <td>VR games, house competitions, magical events</td>
+        </tr>
+    </table>
+
+    <!-- Footer Section -->
+        <footer class="site-footer">
+            <div class="footer-left">
+                <h3 class="brand-name">Hogwarts Wizardry Arcade</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-center">
+                <p>&copy; All Rights Reserved</p>
+            </div>
+            <div class="footer-right">
+                <h4>Accepted Payment Methods</h4>
+                <div class="payment-icons">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Swiper JS -->
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Swiper Initialization -->
+    <script>
+    var swiper = new Swiper('.swiper', {
+        slidesPerView: 3, // Show 3 cards at a time (adjust as needed)
+        spaceBetween: 20,
+        loop: true,
+        grabCursor: true,
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        },
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        }
+        }
+    });
+    </script>
+
+</body>
+</html>        
+
+        
+        

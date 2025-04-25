@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+.top-header {
+    background-color: #0E1A40;
+    color: #FFC500;
+    padding: 10px 20px;
+    font-family: 'Gill Sans MT', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.branding {
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px;
+    color: #FFC500;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds space between input and button */
+}
+
+.actions input {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #AAA;
+    font-size: 16px;
+    width: 200px; /* Optional: controls width */
+}
+
+.actions button {
+    padding: 8px 15px;
+    margin-left: 5px;
+    background-color: #7F0909; /* Gryffindor Red */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Gill Sans MT Italic';
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.actions button:hover {
+    background-color: #FFC500; /* Gryffindor Gold */
+    color: #000;
+}
+
+/* Horizontal Navigation Bar */
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    padding: 12px 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: Gill Sans MT Italic;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-bar a:hover {
+    background-color: #FFC500;
+    color: #0E1A40;
+    border-radius: 4px;
+}
+
+/* Footer */
+.site-footer {
+background-color: #0E1A40;
+color: #FFC500;
+padding: 30px 20px;
+text-align: center;
+font-family: 'Gill Sans MT', sans-serif;
+font-size: 16px;
+/* No fixed position here! */
+}
+
+.footer-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.footer-left {
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    margin-top: 7px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fefefe;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #FFFFFF;
+}
+
+.footer-center{
+    text-align: center;/* flex: 1; */
+    font-size: 14px;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-right h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Add spacing for body content */
+body {
+    padding-top: 150px;
+    padding-bottom: 80px;
+    font-family: Arial, sans-serif;
+}
+
+.main-content{
+    flex-grow: 1; /* Allow the main content to take the remaining space */
+    padding-bottom: 20px;
+    margin-bottom: 0 auto;
+    background-color: #AAAAAA;
+    min-height: calc(100vh - 160px); /* Full height minus header and footer */
+}
+
+/* Games Container */
+.container {
+    background: #191970, #000000;
+    padding: 15px 9%;
+    padding-bottom: 100px;
+}
+
+.containers h2{
+    padding: 10px 0px 10px 5px;
+    font-family:'Lobster', sans-serif ;
+    font-size: 2.7em;
+    color: black;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 15px; /* Space between grid items */
+}
+
+.box {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px 20px;
+    background: #5D5D5D;
+}
+
+.box img {
+    width: 288px; /* Make images fill the box */
+    height: 288px; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the box area */
+    max-width: 100%; /* Ensure the image doesn't overflow */
+    border-radius: 5px; /* Optional: to give rounded corners to the images */
+}
+
+.box h3 {
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    padding: 10px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.box p {
+    color: #F5F5F5;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.price {
+    font-size: 18px;
+    color: rgb(5, 106, 110);
+    font-weight: bold;
+}
+
+.add-to-cart, .buy-it-now {
+    margin: 10px 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #0E1A40;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color:   #FFC500;
+}
+
+.buy-it-now:hover {
+    background-color: #FFC500;
+}
+
+.main-content{
+    flex-grow: 1; /* Allow the main content to take the remaining space */
+    padding-bottom: 20px;
+    margin-bottom: 0 auto;
+    background-color: #AAAAAA;
+    min-height: calc(100vh - 160px); /* Full height minus header and footer */
+}
+
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .side-nav {
+        width: 100px;
+        padding: 15px;
+    }
+
+    .side-nav .nav-header {
+        font-size: 20px;
+    }
+
+    .side-nav button {
+        font-size: 14px;
+    }
+}
+
+.actions button:hover {
+    background-color: #FFC500; /* Gryffindor Gold */
+    color: #000;
+}
+
+.main-content{
+    text-decoration: none;
+    flex-grow: 1;
+    padding: 20px;
+    margin-top: 70px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the footer is always at the bottom */
+}
+  
+.content-wrapper {
+    flex-grow: 1;
+}
+
+/* Payment Section */
+.payment-section {
+    text-align: center;
+    margin-top: 30px;
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.payment-icon{
+    display: flex;
+    gap: 40px;
+}
+
+.payment-icon i {
+    font-size: 65px;
+    color: #0e1a40;
+    transition: color 0.3s;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+/* Flexbox example with vendor prefixes */
+.container {
+    display: flex;
+    display: -webkit-flex;  /* Safari */
+    display: -ms-flexbox;   /* IE10 */
+  }
+  

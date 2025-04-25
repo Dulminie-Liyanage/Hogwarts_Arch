@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Page</title>
+  <link rel="stylesheet" href="./css/order.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Gill+Sans+MT&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="top-header">
+        <div class="header-container">
+            <div class="branding">Hogwarts Wizardry Arcade</div>
+            <div class="actions">
+                <input type="text" placeholder="Search for magic..." />
+                <button>Search</button>
+            </div>
+        </div>
+        <nav class="nav-bar">
+            <a href="index.html">Home</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="console.html">Consoles & Peripherals</a>
+            <a href="games.html">Games</a>
+            <a href="upcoming.html">Upcoming Games</a>
+            <a href="events&news.html">Events & News</a>
+            <a href="faq.html">Queries & FAQ</a>
+            <a href="order.html">Order</a>
+        </nav>
+    </header>
+    <div class="banner">
+        <a href="#" class="logo">Purchase Your Order</a>
+        <div id="cart-icon">
+            <i class="ri-shopping-bag-line"></i>
+            <span class="cart-icon-count">0</span>
+        </div> 
+    </div>
+    <main>
+        <form id="order-form">
+            <section class="product-section">
+                <h2>Processors</h2>
+                <div class="slider-container">
+                    <button type="button" class="slider-btn left">&#10094;</button>            
+                    <div class="product-slider">
+                        <div class="product-card">
+                            <img src="./Images/P1.jpg" alt="Intel i5(13th Gen)" />
+                            <h3>Intel Core i5(13th Gen)</h3>
+                            <p>LKR 51,000</p>
+                            <label>Qty:
+                            <input type="number" min="0" data-name="Intel Core i5(13th Gen)" data-price="51000">
+                            </label>
+                            <button type="button" class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="./Images/P2.jpg" alt="Intel i7(13th Gen)" />
+                            <h3>Intel Core i7(13th Gen)</h3>
+                            <p>LKR 83,000</p>
+                            <label>Qty:
+                            <input type="number" min="0" data-name="Intel Core i7(13th Gen)" data-price="83000">
+                            </label>
+                            <button type="button" class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="./Images/P3.jpg" alt="Intel i9(13th Gen)" />
+                            <h3>Intel Core i9(13th Gen)</h3>
+                            <p>LKR 145,000</p>
+                            <label>Qty:
+                            <input type="number" min="0" data-name="Intel Core i9(13th Gen)" data-price="145000">
+                            </label>
+                            <button type="button" class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="./Images/P4.jpg" alt="AMD Ryzen 3 4100" />
+                            <h3>AMD Ryzen 3 4100</h3>
+                            <p>LKR 30,000</p>
+                            <label>Qty:
+                            <input type="number" min="0" data-name="AMD Ryzen 3 4100" data-price="30000">
+                            </label>
+                            <button type="button" class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="./Images/P5.jpg" alt="AMD Ryzen 5 5600X" />
+                            <h3>AMD Ryzen 5 5600X</h3>
+                            <p>LKR 51,000</p>
+                            <label>Qty:
+                            <input type="number" min="0" data-name="AMD Ryzen 5 5600X" data-price="51000">
+                            </label>
+                            <button type="button" class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="./Images/P7.jpg" alt="AMD Ryzen 7 5800X" />
+                            <h3>AMD Ryzen 7 5800X</h3>
+                            <p>LKR 30,000</p>
+                            <label>Qty:
+                            <input type="number" min="0" data-name="AMD Ryzen 7 5800X" data-price="30000">
+                            </label>
+                            <button type="button" class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                
+                    <button type="button" class="slider-btn right">&#10095;</button>
+                </div>
+            </section>
+            <section class="product-section">
+                <h2>Graphic Cards</h2>
+                <div class="slider-container">
+                  <button type="button" class="slider-btn left">&#10094;</button>
+                  <div class="product-slider">
+                        <div class="product-card">
+                            <img src="./Images/Gr1.jpg" alt="NVIDIA GTX 1660 Super" />
+                            <h3>NVIDIA GTX 1660 Super</h3>
+                            <p>LKR 65,000</p>
+                            <label>Qty:
+                                <input type="number" min="0" data-name="NVIDIA GTX 1660 Super" data-price="65000">
+                            </label>
+                            <button type="button" class="add-to-cart">Add to Cart</button>
+                        </div>
+                    <div class="product-card">
+                      <img src="./Images/Gr2.jpg" alt="NVIDIA RTX 3060" />
+                      <h3>NVIDIA RTX 3060</h3>
+                      <p>LKR 136,000</p>
+                      <label>Qty:
+                        <input type="number" min="0" data-name="NVIDIA RTX 3060" data-price="136000">
+                      </label>
+                      <button type="button" class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                      <img src="./Images/Gr3.jpg" alt="NVIDIA RTX 3070" />
+                      <h3>NVIDIA RTX 3070</h3>
+                      <p>LKR 145,000</p>
+                      <label>Qty:
+                        <input type="number" min="0" data-name="NVIDIA RTX 3070" data-price="145000">
+                      </label>
+                      <button type="button" class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                      <img src="./Images/Gr4.png" alt="NVIDIA RTX 4060" />
+                      <h3>NVIDIA RTX 4060</h3>
+                      <p>LKR 100,000</p>
+                      <label>Qty:
+                        <input type="number" min="0" data-name="NVIDIA RTX 4060" data-price="100000">
+                      </label>
+                      <button type="button" class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                      <img src="Images/Gr5.png" alt="AMD Radeon RX 580" />
+                      <h3>AMD Radeon RX 580</h3>
+                      <p>LKR 45,000</p>
+                      <label>Qty:
+                        <input type="number" min="0" data-name="AMD Radeon RX 580" data-price="45000">
+                      </label>
+                      <button type="button" class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                      <img src="Images/Gr6.jpg" alt="AMD Radeon RX 6700 XT" />
+                      <h3>AMD Radeon RX 6700 XT</h3>
+                      <p>LKR 122,000</p>
+                      <label>Qty:
+                        <input type="number" min="0" data-name="AMD Radeon RX 6700 XT" data-price="122000">
+                      </label>
+                      <button type="button" class="add-to-cart">Add to Cart</button>
+                    </div>
+                  </div>
+                  <button type="button "class="slider-btn right">&#10095;</button>
+                </div>
+            </section>
+            <section class="product-section">
+                <h2>Motherboards</h2>
+                <div class="slider-container">
+                    <button type="button" class="slider-btn left">&#10094;</button>
+                    <div class="product-slider">
+                        <div class="product-card">
+                            <img src="./Images/As1.png" alt="ASUS B450" />
+                            <h3>ASUS B450</h3>
+                            <p>LKR 32,000</p>
+                            <label>Qty:
+                                <input type="number" min="0" data-name="ASUS B450" data-price="32000">
+                            </label>
+                            <button type="button" class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="./Images/As2.jpg" alt="MSI B550" />
+                            <h3>MSI B550</h3>
+                            <p>LKR 37,000</p>
+                            <label>Qty:
+                                <input type="number" min="0" data-name="MSI B550" data-price="37000">
+                            </label>
+                            <button type="button" class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="./Images/As3.jpg" alt="Gigabyte A520	" />
+                            <h3>Gigabyte A520	</h3>
+                            <p>LKR 26,000</p>
+                            <label>Qty:
+                                <input type="number" min="0" data-name="Gigabyte A520	" data-price="26000">
+                            </label>
+                            <button type="button" class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="./Images/As4.jpg" alt="ASUS TUF Gaming X570" />
+                            <h3>ASUS TUF Gaming X570</h3>
+                            <p>LKR 61,000</p>
+                            <label>Qty:
+                                <input type="number" min="0" data-name="ASUS TUF Gaming X570" data-price="61000">
+                            </label>
+                            <button type="button" class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="Images/AS5.jpg" alt="MSI MAG B650" />
+                            <h3>MSI MAG B650</h3>
+                            <p>LKR 47,000</p>
+                            <label>Qty:
+                                <input type="number" min="0" data-name="MSI MAG B650" data-price="47000">
+                            </label>
+                            <button type="button" class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="Images/As6.webp" alt="ASRock B550M Pro4" />
+                            <h3>ASRock B550M Pro4</h3>
+                            <p>LKR 35,000</p>
+                            <label>Qty:
+                                <input type="number" min="0" data-name="ASRock B550M Pro4" data-price="35000">
+                            </label>
+                            <button type="button" class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>               
+                    <button type="button "class="slider-btn right">&#10095;</button>
+                </div>
+            </section>
+            <section class="product-section">
+                <h2>Memory</h2>
+                <div class="slider-container">
+                    <button type="button" class="slider-btn left">&#10094;</button>
+                    <div class="product-slider">
+                        <div class="product-card">
+                            <img src="./Images/M1.jpg" alt="8GB DDR4 3200MHz" />
+                            <h3>8GB DDR4 3200MHz</h3>
+                            <p>LKR 10,000</p>
+                            <label>Qty:
+                                <input type="number" min="0" data-name="8GB DDR4 3200MHz" data-price="10000">
+                            </label>
+                            <button type="button" class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="./Images/M2.jpg" alt="16GB DDR4 3200MHz" />
+                            <h3>16GB DDR4 3200MHz</h3>
+                            <p>LKR 19,000</p>
+                            <label>Qty:
+                                <input type="number" min="0" data-name="16GB DDR4 3200MHz" data-price="19000">
+                            </label>
+                            <button type="button" class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="./Images/M3.jpg" alt="Corsair Vengeance 16GB Kit" />
+                            <h3>Corsair Vengeance 16GB Kit</h3>
+                            <p>LKR 22,000</p>
+                            <label>Qty:
+                                <input type="number" min="0" data-name="Corsair Vengeance 16GB Kit" data-price="22000">
+                            </label>
+                            <button type="button" class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="./Images/M4.jpg" alt="Kingston Fury Beast 16GB Kit" />
+                            <h3>Kingston Fury Beast 16GB Kit</h3>
+                            <p>LKR 19,000</p>
+                            <label>Qty:
+                                <input type="number" min="0" data-name="Kingston Fury Beast 16GB Kit" data-price="19000">
+                            </label>
+                            <button type="button" class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>               
+                    <button type="button "class="slider-btn right">&#10095;</button>
+                </div>
+            </section>
+            <section class="product-section">
+                <h2>Storage Devices</h2>
+                <div class="slider-container">
+                    <button type="button" class="slider-btn left">&#10094;</button>
+                    <div class="product-slider">
+                        <div class="product-card">
+                            <img src="./Images/So1.jpg" alt="500GB SATA SSD" />
+                            <h3>500GB SATA SSD</h3>
+                            <p>LKR 12,500</p>
+                            <label>Qty:
+                                <input type="number" min="0" data-name="500GB SATA SSD" data-price="12500">
+                            </label>
+                            <button type="button" class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="./Images/So2.webp" alt="1TB SATA SSD" />
+                            <h3>1TB SATA SSD</h3>
+                            <p>LKR 19,850</p>
+                            <label>Qty:
+                                <input type="number" min="0" data-name="1TB SATA SSD" data-price="19850">
+                            </label>
+                            <button type="button" class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="./Images/So3.jpg" alt="2TB HDD (7200RPM)" />
+                            <h3>2TB HDD (7200RPM)</h3>
+                            <p>LKR 18,000</p>
+                            <label>Qty:
+                                <input type="number" min="0" data-name="2TB HDD (7200RPM)" data-price="18000">
+                            </label>
+                            <button type="button" class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="./Images/So4.jpg" alt="1TB M.2 NVMe SSD (Gen 3)" />
+                            <h3>1TB M.2 NVMe SSD (Gen 3)</h3>
+                            <p>LKR 27,090</p>
+                            <label>Qty:
+                                <input type="number" min="0" data-name="1TB M.2 NVMe SSD (Gen 3)" data-price="27090">
+                            </label>
+                            <button type="button" class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="Images/So5.jpg" alt="2TB M.2 NVMe SSD (Gen 4)" />
+                            <h3>2TB M.2 NVMe SSD (Gen 4)</h3>
+                            <p>LKR 48,000</p>
+                            <label>Qty:
+                                <input type="number" min="0" data-name="2TB M.2 NVMe SSD (Gen 4)" data-price="48000">
+                            </label>
+                            <button type="button" class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="Images/So6.jpg" alt="4TB HDD" />
+                            <h3>4TB HDD</h3>
+                            <p>LKR 28,000</p>
+                            <label>Qty:
+                                <input type="number" min="0" data-name="4TB HDD" data-price="28000">
+                            </label>
+                            <button type="button" class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <button type="button "class="slider-btn right">&#10095;</button>
+                </div>
+            </section>
+            <!-- Cart Section -->
+            <section class="cart-section">
+                <h2>Your Cart</h2>
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Unit Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                        <!-- JavaScript will dynamically populate rows here -->
+                    </tbody>
+                </table>
+                <div class="cart-total">
+                    <strong>Total Price:  <span id="total-price">0.00</span></strong>
+                </div>
+                <div class="fav-buttons">
+                    <button type="button" id="buy-now">Buy Now</button>
+                    <button type="button" onclick="saveToFavourites()">Add to Favourites</button>
+                    <button type="button" onclick="applyFavourites()">Apply Favourites</button>
+                </div>
+            </section>
+        </form>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <h3 class="footer-left">Hogwarts Wizardry Arcade</div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+        <div class="footer-center">
+            <p>© All Rights Reserved</p>
+        </div>
+        <div class="footer-right">
+                <strong>Accepted Payment Methods</strong><br>
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-paypal"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Polyfill for fetch -->
+    <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch"></script>
+    
+    <script src="./js/order.js"></script>
+    </main>
+</body>
+</html>
